@@ -1,0 +1,18 @@
+class Dog{
+    constructor(name){
+        this._name = name
+    }
+
+introduce(){
+    console.log("This is "+this._name+" !")
+}
+// A static method
+static bark(){
+    console.log("Woof !")
+}
+}
+const myDog = new Dog("Buster")
+myDog.introduce()
+//myDog.bark ไม่สามารถเรียกใช้ bark ได้โดยตรงเพราะ bark ไม่ใช่General 
+//Calling the static method ถ้าเรียกต้องใช้
+Dog.bark()
