@@ -9,6 +9,7 @@ function cube(x){
     return x*x*x
 }
 const add = (a,b) => a+b
+const div = (c,d) => c/d
 
 const status = true
-module.exports = {person,sayHello,cube,add,status}
+module.exports = {person,sayHello,cube,add,status,div}
